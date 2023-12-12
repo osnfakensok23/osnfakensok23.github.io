@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>CoderDocs - Bootstrap 5 Documentation Template For Software Projects</title>
+    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="favicon.ico"> 
     
@@ -16,238 +17,1349 @@
     
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
-</head> 
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		.column {
+		  float: left;
+		  width: 25.0%;
+		  padding: 5px;
+		}
+		
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		</style>
 
-<body>    
-    <header class="header fixed-top">	 
-	       
+</head> 
+<!-- Companion Appendix for our Entitled Paper -->
+<body class="docs-page">    
+    <header class="header fixed-top">	    
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Coder<span class="text-alt">Docs</span></span></a></div>    
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="docs-pages.html"><span class="logo-text">SoK: False Information....: Demystifying Elements of Social
+						Media Manipulations<span class="text-alt"></span></span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div> -->
 	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+					<!-- <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
 						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
 		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li> -->
+		            <!-- </ul>//social-list -->
+		            <a href="https://github.com/osnfakensok23/osnfakensok23.github.io" class="btn btn-primary d-none d-lg-flex">Github</a>
 	            </div><!--//docs-top-utilities-->
             </div><!--//container-->
         </div><!--//branding-->
     </header><!--//header-->
     
     
-    <div class="page-header theme-bg-dark py-5 text-center position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h1 class="page-heading single-col-max mx-auto">Documentation</h1>
-		    <div class="page-intro single-col-max mx-auto">Everything you need to get your software documentation online.</div>
-		    <div class="main-search-box pt-3 d-block mx-auto">
-                 <form class="search-form w-100">
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
 		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
 		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
 		        </form>
-             </div>
-	    </div>
-    </div><!--//page-header-->
-   <div class="page-content">
-	    <div class="container">
-		    <div class="docs-overview py-5">
-			    <div class="row justify-content-center">
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-map-signs"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Introduction</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							    </div>
-							    <a class="card-link-mask" href="docs-page.html#section-1"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-arrow-down"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Installation</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-							    </div>
-							    <a class="card-link-mask" href="docs-page.html#section-2"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-box fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">APIs</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-3"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-cogs fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Integrations</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-4"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-tools"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Utilities</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-5"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-laptop-code"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Web</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-6"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-tablet-alt"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Mobile</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-7"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-book-reader"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Resources</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-8"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-lightbulb"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">FAQs</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-9"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-		    </div><!--//container-->
-		</div><!--//container-->
-    </div><!--//page-content-->
+            </div>
+			<!-- characterization , bot_feature, osn_landscape, trigger_bots -->
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#systematic_review_protocol"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Systematic Review Protocol</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#search-terms">Search Terms</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a></li> -->
+				    <!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#readability_metrics"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Readability Metrics</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Search Query Terms</a></li>  -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Section Item 2.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li> -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#bots_on_twitter"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Bots on Twitter</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#osn_landscape"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>OSN Landscape</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#information_diffusion"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>False/Real Info. Diffusion</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#characterization"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>False information</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li> -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#bot_feature"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Bot Feature Overview</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#bot_feature_1">User Feature</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#bot_feature_2">Network Feature</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#bot_feature_3">Content and Language</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#trigger_bots"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Case Study (Trigger Bots)</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#feature_manipulation"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Feature Manipulation</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#references"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>References</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li> -->
+				    <!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+			    </ul>
+				<!-- SoK: False Information, Bots and Malicious Campaigns: Demystifying Elements of Social Media Manipulations -->
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="systematic_review_protocol">
+				    <section class="docs-section">
+					<header class="docs-header">
+					    <h1 class="docs-heading">Systematic Review Protocol<span class="docs-time">Something</span></h1>
+					</header>
+					
+						    <p>This research study covers three types of SMMs, (i.e., false information, bots, and malicious campaigns). As mentioned in Section 2, we searched and selected papers following a systematic literature review (SLR) process. We form search words for the three respective SMM's to query separately from databases such as Scopus, IEEE Digital Library, ACM Library, and Google Scholar. In order to query papers from these databases, we combine keywords in four dimensions: purpose, type of SMM, method, and used platform.</p>
+						<!--//docs-intro-->
 
-    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h3 class="mb-2 text-white mb-3">Launch Your Software Project Like A Pro</h3>
-		    <div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project and start getting traction from your target users? Check out our premium <a class="text-white" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Bootstrap 5 startup template CoderPro</a>! It has everything you need to promote your product.</div>
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Get CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-		    </div>
-	    </div>
-    </section><!--//cta-section-->
+						<!-- <div class="callout-block callout-block-info" id="search-terms">     
+                            <div class="content">
+                                <h4 class="callout-title"> -->
+	                                <!-- <span class="callout-icon-holder me-1"> -->
+		                                <!-- <i class="fas fa-info-circle"></i> -->
+		                            <!-- </span>//icon-holder -->
+	                                <!-- Search Query Terms -->
+	                            <!-- </h4>
+								<p> First, we start by querying false information-related articles; we use the search terms with keywords such as 
+									<br>
+									``detection" AND (``false information" OR ``fake news" OR ``misinformation" OR ``disinformation") AND (``machine learning" OR "nlp") AND (``social media" OR ``online social networks" OR ``OSN"). 
+									<br><br>
+									Similarly, to find articles for bot detection, we use search query terms such as ``detection" AND (``bot" OR ``fake account" OR ``inauthentic account" OR ``automated") AND (``machine learning" OR "nlp") AND (``social media" OR ``online social networks" OR ``OSN").
+									<br><br> Likewise, to find articles for malicious campaigns, we use the keywords such as ``detection" AND (``malicious campaign" OR ``influence operation" OR ``computational propaganda" OR ``misinformation campaign" OR ``disinformation campaign") AND (``machine learning" OR "nlp") AND (``social media" OR ``online social networks" OR ``OSN")</p> -->
+                                <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim ipsam voluptatem quia voluptas <a href="#">link example</a> sit aspernatur aut odit aut fugit.</p> -->
+                            <!-- </div>//content -->
+                        <!-- </div>//callout-block -->
+						
+						First, we start by querying <b>false information-related articles</b>; we use the search terms with keywords such as 
+						<br>
+						<div class="alert alert-info" role="alert" id="search-terms">
+							"detection" AND ("false information" OR "fake news" OR "misinformation" OR "disinformation") AND ("machine learning" OR "nlp") AND ("social media" OR "online social networks" OR "OSN")
+						</div>
+						Similarly, to find articles for <b>bot detection</b>, we use search query terms such as 
+						<div class="alert alert-success" role="alert">
+							"detection" AND ("bot" OR "fake account" OR "inauthentic account" OR "automated") AND ("machine learning" OR "nlp") AND ("social media" OR "online social networks" OR "OSN")
+						</div>
+						Likewise, to find articles for <b>malicious campaigns</b>, we use the keywords such as 
+						<div class="alert alert-warning" role="alert">
+							"detection" AND ("bot" OR "fake account" OR "inauthentic account" OR "automated") AND ("machine learning" OR "nlp") AND ("social media" OR "online social networks" OR "OSN")
+						</div>
 
-    <footer class="footer">
+						Figure below shows the detail of used search terms with their synonyms.
+						<br><br>
+						<center>
+						<img src="/assets/images/keywords_.png"
+              			class="mb-3 img-fluid img-thumbnail" data-action="zoom" width="45%"></center>
 
-	    <div class="footer-bottom text-center py-5">
-		    
-		    <ul class="social-list list-unstyled pb-4 mb-0">
-			    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-	        </ul><!--//social-list-->
-	        
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-            
-	        
+						<p>Finally, we combined all three forms and retrieved the final set of papers.</p>
+						<p>Since SMM is a recent threat in the context of OSN, we kept the timeline for search queries from 2015 to 2022 to cover the past half-decade and the current work in SMM. In some places, we use papers before 2015 (publication year) to support a few definitions and to provide the necessary background. We first exclude papers that do not pertain to the chosen SMM factors or are not written in the English language. Next, we analyze papers by reading their title and abstract to filter out the most notable works.</p>
+						<p>Next, we proceed to our second-level reading process using a set of criteria. The criteria include looking into aspects such as the category of false information type (fake news, rumor, hoax, propaganda, phishing), as all are commonly used definitions for false information. Other criteria include the OSN platform (such as Twitter and Facebook), the method or technique used, and the most prevalent features in the detection process. The bot type categories (spambot, social bot, follower bot, scam bot), with other aforementioned criteria, define the analysis criteria for bot detection-related articles. Likewise, we analyze malicious campaign detection papers on the defined criteria. This results in 34 papers for analysis in false information detection, 35 in bot detection, 28 in malicious campaign detection, and 3 in all three forms combined.</p>
+					</section>
+				</article>	
+<!-- 
+						<article class="docs-article" id="readability_metrics">
+							<section class="docs-section">
+							<header class="docs-header">
+								<h1 class="docs-heading">Readability Metrics</h1> -->
+								<!-- <section class="docs-intro"> -->
+									<!-- <p>We mention various numeric gauges that can be used to measure readability: </p>
+									<ul>
+										<li><strong class="me-1">Dale-Chall:</strong> measures the use of complex words.</li>
+										<li><strong class="me-1">Brunet’s Index:</strong> measures the quality of lexical richness of the text.</li>
+										<li><strong class="me-1">Flech’s Reading Ease Score (RES) and Flesch-Kincaid:</strong> measure the ease of reading and scanning of text.</li>
+										<li><strong class="me-1">Fry graph:</strong> measures the structure of paragraphs for readability.</li>
+										<li><strong class="me-1">Gunning Fog Index:</strong> measures sentence length and average words per sentence.</li>
+										<li><strong class="me-1">Honore Statistic:</strong> measures the frequency of larger words for lexical richness.</li>
+										<li><strong class="me-1">Hyperpartisan:</strong> measures strong partisanship or bias.</li>
+										<li><strong class="me-1">McAlpine EFLAW Score:</strong> measures the readability level for non- native English speakers.</li>
+										<li><strong class="me-1">SMOG grading or Coleman-Liau index:</strong> measure the required reading level of the reader.</li>
+									</ul>
+							</header> -->
+							<!-- </section>//docs-intro -->
+							<!-- <section class="docs-section"></section> -->
+						<!-- </article>//docs-article -->
+						
+						<article class="docs-article" id="bots_on_twitter">
+							<section class="docs-section">
+							<header class="docs-header">
+								<h1 class="docs-heading">Bot Percentage on Twitter</h1>
+								<p>Different OSNs have different usability roles among users. For example, Twitter is considered one of the sources of information even for journalists. As discussed in Section 3 concerning bots, on Twitter particularly, we identified bot percentages discovered from multiple studies in their datasets, ranging from 5% to 25% as shown in Table below. We note that Botometer is a widely used tool for bot detection with a threshold of 0.5.</p>
+								<!-- <p>We identified bot percentage discovered in original dataset from multiple studies:</p> -->
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">Reference</th>
+										<th scope="col">Sample Size</th>
+										<th scope="col">Method</th>
+										<th scope="col">Threshold</th>
+										<th scope="col">%age</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td scope="row">[31]</th>
+										<td>>1000 (mDAU)</td>
+										<td scope="row">Twitter Inc.</th>
+										<td>N/A</td>
+										<td scope="row">5% to 8.5%</th>
+									</tr>
+									<tr>
+										<td scope="row">[32]</th>
+										<td>1000</td>
+										<td scope="row">Botometer</th>
+										<td>>= 0.5</td>
+										<td scope="row">6%</th>
+									</tr>
+									<tr>
+										<td scope="row">[33]</th>
+										<td>254,492</td>
+										<td scope="row">Multiple Tools</th>
+										<td>>= 0.8</td>
+										<td scope="row">8%</th>
+									</tr>
+									<tr>
+										<td scope="row">[16]</th>
+										<td>2,725,269</td>
+										<td scope="row">Botometer</th>
+										<td>>= 0.5</td>
+										<td scope="row">13.2%</th>
+									</tr>
+									<tr>
+										<td scope="row">[8]</th>
+										<td>14 million</td>
+										<td scope="row">Botometer</th>
+										<td>>= 0.43</td>
+										<td scope="row">9% to 15%</th>
+									</tr>
+									<tr>
+										<td scope="row">[34]</th>
+										<td>88 million</td>
+										<td scope="row">Manual Rules</th>
+										<td>>= 0.5</td>
+										<td scope="row">21%</th>
+									</tr>
+									<tr>
+										<td scope="row">[19]</th>
+										<td>10,000</td>
+										<td scope="row">Botometer</th>
+										<td>>= 0.5</td>
+										<td scope="row">22%</th>
+									</tr>
+									<tr>
+										<td scope="row">[35]</th>
+										<td>1,476,700</td>
+										<td scope="row">Botometer</th>
+										<td>>= 0.76</td>
+										<td scope="row">5% to 25%</th>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+					</section><!--//docs-intro-->
+				</header>
+				</article><!--//docs-article-->
+				
+
+		<article class="docs-article" id="osn_landscape">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">OSN Manipulation Landscape</h1>
+				<p>We identified bot percentage discovered in original dataset from multiple studies:</p>
+		<div class="table-responsive my-4">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">Reference</th>
+						<th scope="col" style="background-color:powderblue;">[16]</th>
+						<th scope="col" style="background-color:powderblue;">[17]</th>
+						<th scope="col" style="background-color:powderblue;">[18]</th>
+						<th scope="col" style="background-color:powderblue;">[19]</th>
+						<th scope="col" style="background-color:powderblue;">[20]</th>
+						<th scope="col" style="background-color:powderblue;">[21]</th>
+						<th scope="col" style="background-color:powderblue;">[22]</th>
+						<th scope="col" style="background-color:powderblue;">[23]</th>
+						<th scope="col" style="background-color:powderblue;">[24]</th>
+						<th scope="col" style="background-color:powderblue;">[25]</th>
+						<th scope="col" style="background-color:rgb(210, 203, 229);">[26]</th>
+						<th scope="col" style="background-color:rgb(210, 203, 229);">[27]</th>
+						<th scope="col" style="background-color:rgb(210, 203, 229);">[28]</th>
+						<th scope="col" style="background-color:rgb(210, 203, 229);">[29]</th>
+						<th scope="col" style="background-color:rgb(210, 203, 229);">[30]</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Information Reporting</th>
+					</tr>
+					<!-- &#9989; -->
+					<tr>
+						<td scope="row">Error</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Missing</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Biased</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Event</th>
+					</tr>
+					<tr>
+						<td scope="row">Random</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Predictive</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+
+					</tr>
+					<tr>
+						<td scope="row">Time-critical</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Intent</th>
+					</tr>
+					<tr>
+						<td scope="row">Misinformation</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Disinformation</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Malinformation</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Claim-Type</th>
+					</tr>
+					<tr>
+						<td scope="row">Rumor</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Propaganda</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Fake News</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Spam</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Online Hate</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Content Context</th>
+					</tr>
+					<tr>
+						<td scope="row">Satire</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">False Connection</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Misleading Content</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">False context</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Manipulated content</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Fabricated content</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">User Belief</th>
+					</tr>
+					<tr>
+						<td scope="row">Confirmation Bias</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Naive Realism</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Homeostatis</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Homophily</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Account Type</th>
+					</tr>
+					<tr>
+						<td scope="row">Human Account</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Bot Account</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+					</tr>
+					<tr>
+						<td scope="row">Cyborg Account</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+					<tr>
+						<th scope="row">Bot Type</th>
+					</tr>
+					<tr>
+						<td scope="row">Social Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#9989;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+					</tr>
+					<tr>
+						<td scope="row">Follower Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Doppleganger Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Political Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Finance Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Spam Bot</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+					</tr>
+						<th scope="row">Campaing Promotion</th>
+					</tr>
+					<tr>
+						<td scope="row">Organic</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<td scope="row">Inorganic</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+					</tr>
+					<tr>
+						<th scope="row">Campaign Controller</th>
+					</tr>
+					<tr>
+						<td scope="row">Single-based</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+					</tr>
+					<tr>
+						<td scope="row">Group-based</td> 
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(221, 251, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#10060;</td>
+						<td style="background-color:rgb(234, 227, 255);">&#9989;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!--//table-responsive-->
+			</section><!--//docs-intro-->
+		</header>
+		</article><!--//docs-article-->
+
+
+		<article class="docs-article" id="information_diffusion">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">False and Real Information Diffusion</h1>
+				<p>Section 4.1.1 delves into the characteristics of the diffusion dynamics associated with false information. While, in this section, we present our analysis of the cumulative distribution of false (or fake) and real information (or news) spread regarding tweets, retweets, and replies.  
+					Figure below depicts the normalized cumulative count and distribution of these categories for both real and fake news. Notably, we observe that the fake information tends to generate a notable, sudden surge of retweets and tweets, surpassing the response garnered by the real information. </p>
+				<div class="row">
+				  <div class="column">
+					<img src="images/0.png" alt="Snow" style="width:100%">
+					<p style="text-align:center;">(a)</p>
+				  </div>
+				  <div class="column">
+					<img src="images/1.png" alt="Forest" style="width:100%">
+					<p style="text-align:center;">(b)</p>
+				  </div>
+				  <div class="column">
+					<img src="images/2.png" alt="Mountains" style="width:100%">
+					<p style="text-align:center;">(c)</p>
+				  </div>
+					<div class="column">
+					<img src="images/3.png" alt="Mountains" style="width:100%">
+					<p style="text-align:center;">(d)</p>
+				  </div>
+				</div>
+				<p><b>Caption: </b>Real vs. Fake news' temporal normalized cumulative count and normalized distribution spread regarding tweets, retweets, and replies for Politics Category. Here, <i>t1-t10</i> in real news refers to the time duration between 2018-03 to 2018-12, and <i>t1-t8</i> in fake news refers to the time duration between 2016-07 to 2017-09.</p>
+				
+				<!-- <p>We explored the Trigger bots using the following keywords:</p> -->
+		
+			</section><!--//docs-intro-->
+		</header>
+	</article><!--//docs-article-->
+
+
+		<article class="docs-article" id="characterization">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">False information characterization</h1>
+				<section class="docs-intro">
+					<p>In Section 4.2 false information works are discussed with a literature review as shown in Table 4. This appendix gives information on the characterization of literary work that is done using different collection methods, platforms, dataset sizes or languages, and modalities. To elaborate more in detail, the following characterization is presented:</p>
+					<!-- <p>False information literature is analyzed with the following characterization: </p> -->
+					<ul>
+						<li><strong class="me-1">Data Collection Method:</strong> Researchers have collected and annotated datasets manually (&#9899;) or gathered from existing data repositories (<b>&#9711;</b>) or a combination of both (<b><span style="font-size: 23px;">&#9680;</span></b>).</li>
+						<li><strong class="me-1">Platform:</strong> Name of the platform for which dataset is used.</li>
+						<li><strong class="me-1">Data Collection Tier:</strong> It involves the level of data collection. For instance, Tier 0 (<b>&#9711; &#9711; &#9711;</b>): a) Only tweet text content or b) Tweet text and image, or c) News text content only, d) News text and image; Tier 1 (<b>&#9899;&#9711; &#9711;</b>): a) Tweet + account information or b) News information + meta-data (speaker, context, party affiliations), c) Images data only + meta-data, or d) Image + text in image + meta-data; Tier 2 (<b>&#9899;&#9899;&#9711;</b>): Account information + timeline data; Tier 3 (<b>&#9899;&#9899;&#9899;</b>): Account information + Timeline data + friends timeline</li>
+						<li><strong class="me-1">Size:</strong> Count of the dataset size.</li>
+						<li><strong class="me-1">Classes:</strong> Number of class instance and labels. Binary involves two classes whereas multi-classification problems consist of three or more classes.</li>
+						<li><strong class="me-1">Availability:</strong> Whether code is available (✩) or data is available (<span style="font-size: 12px;">&#9899;</span>) or both (✪). Generally, due to ethics and privacy concerns, multiple researchers do not outsource datasets).</li>
+						<li><strong class="me-1">Feature and Model Selection (FS + Model):</strong> How features were extracted and model was build.</li>
+						<li><strong class="me-1">Popularity:</strong> Code popularity on Github with respect to repository stars. This demonstrates that the work is useful and influential.</li>
+						<li><strong class="me-1">Duration:</strong> This refers to temporal information when the dataset was collected.</li>
+						<li><strong class="me-1">Domain:</strong> Category of false information such as Politics, entertainment, etc.</li>
+						<li><strong class="me-1">Language:</strong> Dominant language used in dataset on which detection is conducted.</li>
+						<li><strong class="me-1">Modality:</strong> Type of content i.e., Unimodal (✎, text-based or image-based) or multimodal (&#128247;, text and image-based).</li>
+					</ul>
+				</section><!--//docs-intro-->
+			</header>
+		</article><!--//docs-article-->
+
+
+		<article class="docs-article" id="bot_feature">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">Bot Feature Overview</h1>
+				<!-- <section class="docs-intro"> -->
+					<p>Both inferential and descriptive approaches use various features in their model. We find five dimensions of feature groups for every account: user profile-based, content-based, temporal-based, devices-based, and network-based features. However, we have combined the device features with the user and temporal features with the network features, as one can be derived from the other. </p>
+					<ol>
+						<li><span id="bot_feature_1"><strong class="me-1">User Features:</strong>User features include meta-data features such as the number of tweets, number of followers/following, account creation date, verified status, and a few others, like short bio descriptions. These features are simple and range from numerical and binary to textual. As such, Beskow et al. [1] used 6 user features, Hayawi et al. [2] used 12 features, Yang et al. used 8 direct metadata user features and 12 derived features, Kudugunta et al. [3] used 10 account-level features (such as status count, list count) and 6 tweet-level features (such as the number of hashtags, URLs) to distinguish bots. On another end, Botometer tool [4] uses up to 1200 features to determine bot likelihood.
+							<br><br>
+							<p>Furthermore, these features can be trained with a supervised classifier like a Random forest model. We mentioned Random Forest, which has been widely adopted and accepted in several user featurebased bot detection researches [5]. Since <i>“Random forest model can learn nonlinear decision boundaries, can handle a large amount of dataset and unnormalized features for training"</i> [6]. However, due to the simplicity of the features, such models face the issue of feature tampering by adversaries. For example, maintaining a balance between followers and the following level takes less effort by a malicious user.</p></span></li>
+						<li><span id="bot_feature_2"><strong class="me-1">Network Features:</strong>Twitter conversations are a combination of tweets and retweets. Ross and Andrew [7] analyzed that retweet networks can provide engagement activity between bots and humans and intra-group interactions. Less than 8% accounts were bot among the total unique accounts. However, more than 20% were bots in the top 100 and top-25 out-degree centrality rankings. This implies the persistent activity of bots to engage with humans irrespective of being small in population size.
+							<br><br>
+							<p>Moving ahead, Varol et al. [8] uses various network features such as network density, clustering coefficient, retweet network, and instrength and out-strength (weighted degree) distribution. Such features help anomaly detection and provide signals for looking further into dense networks of followers and friends of suspicious accounts. Other recent works focus on graph-based techniques using network features, such as node centrality [9] or Graph neural networks [10]. However, graph-based techniques and network features are computationally expensive in terms of collection time. Collecting large-scale datasets from Twitter is a technical hindrance due to Twitter rate limit issues [11], [12]. According to Beskow and Carley [1], it takes about 20 hours to collect network information of 250 accounts. Thus, most of the work remains till Tier 2 of data collection, which consists of user and timeline information.</p></span></li>
+							<p><b>Takeaway A1</b>: Network features are paramount for detection, though researchers avoid it due to data collection time and resource constraints.</p>	
+						<li><span id="bot_feature_3"><strong class="me-1">Content and Language Features:</strong>Bot accounts post malicious URLs, misinformation content, and malware on OSN [13]. Thus, content information brings many contexts to detect bots. Even though different bots post on different topics, tweet-based bot detection uses similar features such as tweet text, tweet length, number of hashtags, URLs, mentions used, is_possibly_sensitive, similarity between tweets, the sentiment of the tweet, originality along with the user-metadata [14]. On another end, Heidari and Jones proposed another solution [15] to use sentiment features from content to detect bots, as bots purposely may be skewed to a position on a topic. However, we noticed that most works focus on user metadata and neglect the content information for social bot detection.
+							<p><b>Research Gap A1</b>: We note that limited work leverage features from content posted by bots. This may be an important feature to differentiate between benign and malicious bots.</p>
+					</ol>
+				</section><!--//docs-intro-->
+			</header>
+		</article><!--//docs-article-->
+		
+
+		<article class="docs-article" id="trigger_bots">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">Case Study: Analysis of coordinated Crypto-Scams (Example of Trigger Bots)</h1>
+				<p>As mentioned in Section 5.1.2, researchers often use the descriptive approach where clusters help to analyze the activity of accounts. Moreover, the descriptive approach also helps to verify claim about certain behavior. One such activity our team addresses in this appendix section is related to Trigger bots, a new family of spambots on Twitter. To aid with a piece of background knowledge, a frequent assumption is that humans are inefficient in detecting social spambots. Despite this, on Twitter, our team observed a few genuine users claiming they found bots. We further looked in a few other conversations and found genuine accounts have expressed their concern about bots that flock to the comment section when a certain <i>magic words</i> are used on Twitter. We call such bots trigger bots. For example, one of the users wrote the word ''<i>Metamask</i>'' (a famous cryptocurrency wallet) and expressed that many bots replied after seeing the word ''Metamask'' due to their automated crawling behavior. Interestingly, few bots replied by sharing a malicious phishing link.</p>
+				
+				<p>Following the analysis of user observations, a viability test was conducted. First, we tweeted by using the word ''Metamask'' in a sentence and expressed that we needed help with our wallet to provide some auxiliary context in the tweet. Within the first 10 hours, nine replies were received, and upon checking the Botometer score of each profile, it was found that most of them had a score of more than 4 on a scale of 0-5, indicating a strong possibility of a bot-like account. In the second test, a tweet containing only the word ''Metamask'' was posted without any additional context. The first reply was received in under nine seconds, and two more were received in less than seven minutes. One of the replies suggested we contact a phishing email address for account recovery, as they had experienced a similar issue. Given the lack of context in the tweet, it was hypothesized that bots were responding using a crawling method triggered by the magic words. (See Table below for more potential trigger words.)</p>
+
+				<p>Next, we aimed to explore the trigger bot network since these accounts had an image in their profiles and few followers, mimicking real profiles. For this, we followed two steps. First, we selected a trigger bot seed account. Second, we build a network of the seed bot's followers and their respective friends (followings). For visualization, we used the Gephi tool. As shown in Figure (a), the dense pathogenic network in orange seems to follow the genuine users (users whom Twitter verified) seen in blue. Then, we filtered out the genuine users and used the Gephi visualization tool (with the Yifan Hu model) to dive deep into this dense network. We find it interesting to see that it resulted in two concentric circles with varied characteristics. First, the accounts in the inner circle are explicitly tasked to follow the accounts in the outer circle, making the outer accounts look popular and credible. We believe this is why every account in the inner circle had zero incoming links and 190 outgoing links. For the accounts in the outer circle, a few had 124 incoming links, and others had 125 incoming links, as shown in Figure (b).</p> 
+				<!-- Moreover, Figure (c) shows the in and out-degree distribution of accounts in both circles.</p> -->
+
+				<p>To give context, we found that only the outer profiles were used for malicious activities, such as posting phishing URLs and carrying crypto scams. <i>These accounts were more persistent, visible, and tweeted with high responsiveness.</i> Then, we use the Botometer service to identify all the bot accounts in our two circles. We note that Botometer could only find bots from the outer circle. The accounts in the inner circle never posted anything, producing no timeline activity for detection. The bot accounts are represented in red in Figure (c). As of 6th July 2022, we see only three accounts suspended by Twitter, as shown in yellow in Figure (c). Whereas a month later, Twitter discovered and suspended most bot accounts from the outer circle, as shown in Figure (d). This corroborates our findings about the crypto-scams trigger bots. However, the inner circle accounts were still active since they did not post anything. These accounts could be used for any other purposes as well. This highlights the need for a relationship between bots and the malicious activities they conduct to detect accurately.</p>
+				
+				<p><b>Takeaway A2:</b> We explored a new type of bots, named Trigger bots whose behavior gets triggered on certain magic words.</p>
+
+				<div class="row">
+					<div class="column">
+					  <img src="images/network.png" alt="Snow" style="width:90%">
+					  <p style="text-align:center;">(a)</p>
+					</div>
+					<div class="column">
+					  <img src="images/22.png" alt="Forest" style="width:100%">
+					  <p style="text-align:center;">(b)</p>
+					</div>
+					<div class="column">
+					  <img src="images/new.png" alt="Mountains" style="width:95%">
+					  <p style="text-align:center;">(c)</p>
+					</div>
+					  <div class="column">
+					  <img src="images/33.png" alt="Mountains" style="width:97%">
+					  <p style="text-align:center;">(d)</p>
+					</div>
+				  </div>
+				  <p><b>Caption: </b>Visualization of crypto-scams (trigger) bots as depicted by <b>(a)</b> dense network of bots in orange color interacting with genuine users shown in blue color. On examining the orange network of trigger bots, we identified two concentric circles of accounts exhibiting two different roles--inner circle bots only tasked to follow outer circle bots and outer circle bots responsible for posting scam messages. These bots have a similar (in and out) degree metric as depicted in <b>(b)</b>; in this network of bots, <b>(c)</b> presents different accounts shown as humans, bots, suspended using Botometer tool as of <i>06/07/2022</i>; and <b>(d)</b> different accounts shown as humans, bots, suspended using Botometer tool as of <i>30/08/2022</i>. We used two different dates to show that many of the accounts from the outer circle are now suspended, but none of the accounts in the inner circle are suspended due to no timeline post activity.</p>
+				  
+
+
+				<!-- <div class="row">
+				  <div class="column">
+					<img src="images/0.png" alt="Snow" style="width:100%">
+				  </div>
+				  <div class="column">
+					<img src="images/1.png" alt="Forest" style="width:100%">
+				  </div>
+				  <div class="column">
+					<img src="images/2.png" alt="Mountains" style="width:100%">
+				  </div>
+					<div class="column">
+					<img src="images/3.png" alt="Mountains" style="width:100%">
+				  </div>
+				</div>
+				<p><b>Real vs. Fake news' temporal normalized cumulative count and normalized distribution spread regarding tweets, retweets, and replies for Politics Category. Here, <i>t1-t10</i> in real news refers to the time duration between 2018-03 to 2018-12, and <i>t1-t8</i> in fake news refers to the time duration between 2016-07 to 2017-09.</b></p>
+				 -->
+				<!-- <p>We explored the Trigger bots using the following keywords:</p> -->
+		<div class="table-responsive my-4">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">Sentence</th>
+						<th scope="col">Potential Trigger Word</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row">got hacked on Instagram</th>
+						<td>hacked</td>
+					</tr>
+					<tr>
+						<td scope="row">need someone to help me write this essay</th>
+						<td>essay</td>
+					</tr>
+					<tr>
+						<td scope="row">trust wallet</th>
+						<td>trust wallet</td>
+					</tr>
+					<tr>
+						<td scope="row">my account got disabled</th>
+						<td>account disabled</td>
+					</tr>
+					<tr>
+						<td scope="row">need logo school</th>
+						<td>logo</td>
+					</tr>
+					<tr>
+						<td scope="row">need design</th>
+						<td>design</td>
+					</tr>
+					<tr>
+						<td scope="row">need gfx</th>
+						<td>gfx</td>
+					</tr>
+					<tr>
+						<td scope="row">buy followers</th>
+						<td>buy followers</td>
+					</tr>
+					<tr>
+						<td scope="row">bot cashapp venmo</th>
+						<td>cashapp, venmo</td>
+					</tr>
+					<tr>
+						<td scope="row">i need a sugar daddy, sugar daddy cheated</th>
+						<td>sugar daddy</td>
+					</tr>
+					<tr>
+						<td scope="row">need this on a tshirt</th>
+						<td>tshirt</td>
+					</tr>
+					<tr>
+						<td scope="row">password managers</th>
+						<td>password managers</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!--//table-responsive-->
+			</section><!--//docs-intro-->
+		</header>
+	</article><!--//docs-article-->
+
+			
+	<article class="docs-article" id="feature_manipulation">
+		<section class="docs-section">
+		<header class="docs-header">
+			<h1 class="docs-heading">Bot detection and Feature manipulation</h1>
+			<p>This appendix section describes the different considerations for features used in bot detection. As already discussed in sub-section 5.2.2, bot developers leverage the advantage of adversarial attacks on bot detectors. As shown in Table below, most of the works use standard features instead of robust features. Hence, the bot detector remains vulnerable to adversarial attacks.</p>
+			<!-- <p>We explored the Trigger bots using the following keywords:</p> -->
+	<div class="table-responsive my-4">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Work Type</th>
+					<th scope="col">Reference</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td scope="row">Bot detection with Standard feature</th>
+					<td>[8, 36, 37, 38, 39, 40]</td>
+				</tr>
+				<tr>
+					<td scope="row">Bot detection with Robust feature</th>
+					<td>[41, 42]</td>
+				</tr>
+				<tr>
+					<td scope="row">Bot Detection with Adversarial training, on Standard Feature</th>
+					<td>[43, 44, 45, 46]</td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!--//table-responsive-->
+		</section><!--//docs-intro-->
+	</header>
+</article><!--//docs-article-->
+
+		<article class="docs-article" id="references">
+			<section class="docs-section">
+			<header class="docs-header">
+				<h1 class="docs-heading">References</h1>
+				<!-- <section class="docs-intro"> -->
+					<ol>
+						<li>Beskow, D. M., & Carley, K. M. (2018, July). Bot-hunter: a tiered approach to detecting & characterizing automated activity on twitter. In Conference paper. SBP-BRiMS: International conference on social computing, behavioral-cultural modeling and prediction and behavior representation in modeling and simulation (Vol. 3, No. 3).</li>
+						<li>Hayawi, K., Mathew, S., Venugopal, N., Masud, M. M., & Ho, P. H. (2022). DeeProBot: a hybrid deep neural network model for social bot detection based on user profile data. Social Network Analysis and Mining, 12(1), 43.</li>
+						<li>Kudugunta, S., & Ferrara, E. (2018). Deep neural networks for bot detection. Information Sciences, 467, 312-322.</li>
+						<li>Davis, C. A., Varol, O., Ferrara, E., Flammini, A., & Menczer, F. (2016, April). Botornot: A system to evaluate social bots. In Proceedings of the 25th international conference companion on world wide web (pp. 273-274).</li>
+						<li>Latah, M. (2020). Detection of malicious social bots: A survey and a refined taxonomy. Expert Systems with Applications, 151, 113383.</li>
+						<li>Vargas, L., Emami, P., & Traynor, P. (2020, November). On the detection of disinformation campaign activity with network analysis. In Proceedings of the 2020 ACM SIGSAC Conference on Cloud Computing Security Workshop (pp. 133-146).s</li>
+						<li>Schuchard, R. J., & Crooks, A. T. (2021). Insights into elections: An ensemble bot detection coverage framework applied to the 2018 US midterm elections. Plos one, 16(1), e0244309.</li>
+						<li>Varol, O., Ferrara, E., Davis, C., Menczer, F., & Flammini, A. (2017, May). Online human-bot interactions: Detection, estimation, and characterization. In Proceedings of the international AAAI conference on web and social media (Vol. 11, No. 1, pp. 280-289).</li>
+						<li>Dehghan, A., Siuta, K., Skorupka, A., Dubey, A., Betlen, A., Miller, D., ... & Pralat, P. (2022). Detecting Bots in Social-Networks Using Node and Structural Embeddings.</li>
+						<li>Feng, S., Tan, Z., Wan, H., Wang, N., Chen, Z., Zhang, B., ... & Luo, M. (2022). TwiBot-22: Towards graph-based Twitter bot detection. arXiv preprint arXiv:2206.04564.</li>
+						<li>Wright, J., & Anise, O. (2018). Don’t@ me: Hunting twitter bots at scale. Blackhat USA.</li>
+						<li>Twitter Inc., “Rate Limits,” https://developer.twitter.com/en/docs/rate-limits, 2023, [Online; accessed 19-Mar-2023].</li>
+						<li>Derhab, A., Alawwad, R., Dehwah, K., Tariq, N., Khan, F. A., & Al-Muhtadi, J. (2021). Tweet-based bot detection using big data analytics. IEEE Access, 9, 65988-66005.</li>
+						<li>Morstatter, F., Wu, L., Nazer, T. H., Carley, K. M., & Liu, H. (2016, August). A new approach to bot detection: striking the balance between precision and recall. In 2016 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM) (pp. 533-540). IEEE.</li>
+						<li>Heidari, M., & Jones, J. H. (2020, October). Using bert to extract topic-independent sentiment features for social media bot detection. In 2020 11th IEEE Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON) (pp. 0542-0547). IEEE.</li>
+						<!--  -->
+						<li>Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. science, 359(6380), 1146-1151.</li>
+						<li>Inwood, O., & Zappavigna, M. (2022). A Systemic Functional Linguistics Approach to Analyzing White Supremacist and Conspiratorial Discourse on YouTube. The Communication Review, 25(3-4), 204-234.</li>
+						<li>Nakamura, K., Levy, S., & Wang, W. Y. (2019). r/fakeddit: A new multimodal benchmark dataset for fine-grained fake news detection. arXiv preprint arXiv:1911.03854.</li>
+						<li>Shu, K., Mahudeswaran, D., Wang, S., Lee, D., & Liu, H. (2020). Fakenewsnet: A data repository with news content, social context, and spatiotemporal information for studying fake news on social media. Big data, 8(3), 171-188.</li>
+						<li>Stein, J., Frey, V., & van de Rijt, A. (2023). Realtime user ratings as a strategy for combatting misinformation: an experimental study. Scientific reports, 13(1), 1626.</li>
+						<li>Wang, W. Y. (2017). " liar, liar pants on fire": A new benchmark dataset for fake news detection. arXiv preprint arXiv:1705.00648.</li>
+						<li>Huh, M., Liu, A., Owens, A., & Efros, A. A. (2018). Fighting fake news: Image splice detection via learned self-consistency. In Proceedings of the European conference on computer vision (ECCV) (pp. 101-117).</li>
+						<li>Dou, Y., Shu, K., Xia, C., Yu, P. S., & Sun, L. (2021, July). User preference-aware fake news detection. In Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (pp. 2051-2055).</li>
+						<li>Wang, Y., Ma, F., Jin, Z., Yuan, Y., Xun, G., Jha, K., ... & Gao, J. (2018, July). Eann: Event adversarial neural networks for multi-modal fake news detection. In Proceedings of the 24th acm sigkdd international conference on knowledge discovery & data mining (pp. 849-857).</li>
+						<li>Z. A. Estela, “Are you fake news,” https://github.com/N2ITN/are-you-fake-news, 2022, [Online; accessed 18-July-2022].</li>
+						<!-- <li></li> -->
+						<li>Hayawi, K., Mathew, S., Venugopal, N., Masud, M. M., & Ho, P. H. (2022). DeeProBot: a hybrid deep neural network model for social bot detection based on user profile data. Social Network Analysis and Mining, 12(1), 43.</li>
+						<li>Subrahmanian, V. S., Azaria, A., Durst, S., Kagan, V., Galstyan, A., Lerman, K., ... & Menczer, F. (2016). The DARPA Twitter bot challenge. Computer, 49(6), 38-46.</li>
+						<li>Abu-El-Rub, N., & Mueen, A. (2019, May). Botcamp: Bot-driven interactions in social campaigns. In The world wide web conference (pp. 2529-2535).</li>
+						<li>Kudugunta, S., & Ferrara, E. (2018). Deep neural networks for bot detection. Information Sciences, 467, 312-322.</li>
+						<li>Yang, K. C., Varol, O., Hui, P. M., & Menczer, F. (2020, April). Scalable and generalizable social bot detection through data selection. In Proceedings of the AAAI conference on artificial intelligence (Vol. 34, No. 01, pp. 1096-1103).</li>
+						<!-- <li></li>
+						<li></li> -->
+						<!-- <for trigger bots> -->
+						<li>U. Security and E. C. T. Report, “US Security and Exchange Commission Twitter Report,” https://www.sec.gov/Archives/edgar/data/141809
+							1/000156459014003474/twtr-10q_20140630.htm?_ga=1.106844928. 2072504916.1401902059, 2014, [Online; accessed 23-Feb-2023].</li>
+						<li>Shao, C., Ciampaglia, G. L., Varol, O., Yang, K. C., Flammini, A., & Menczer, F. (2018). The spread of low-credibility content by social bots. Nature communications, 9(1), 1-9.</li>	
+						<li>Schuchard, R. J., & Crooks, A. T. (2021). Insights into elections: An ensemble bot detection coverage framework applied to the 2018 US midterm elections. Plos one, 16(1), e0244309.</li>	
+						<li>Wright, J., & Anise, O. (2018). Don’t@ me: Hunting twitter bots at scale. Blackhat USA.</li>	
+						<li>Keller, T. R., & Klinger, U. (2019). Social bots in election campaigns: Theoretical, empirical, and methodological implications. Political Communication, 36(1), 171-189.</li>	
+						<!-- bot detection with feature manipulation -->
+						<li>Cresci, S., Di Pietro, R., Petrocchi, M., Spognardi, A., & Tesconi, M. (2016). DNA-inspired online behavioral modeling and its application to spambot detection. IEEE Intelligent Systems, 31(5), 58-64.</li>
+						<li>Cresci, S., Di Pietro, R., Petrocchi, M., Spognardi, A., & Tesconi, M. (2017). Social fingerprinting: detection of spambot groups through DNA-inspired behavioral modeling. IEEE Transactions on Dependable and Secure Computing, 15(4), 561-576.</li>	
+						<li>Mbona, I., & Eloff, J. H. (2023). Classifying social media bots as malicious or benign using semi-supervised machine learning. Journal of Cybersecurity, 9(1), tyac015.</li>
+						<li>Sayyadiharikandeh, M., Varol, O., Yang, K. C., Flammini, A., & Menczer, F. (2020, October). Detection of novel social bots by ensembles of specialized classifiers. In Proceedings of the 29th ACM international conference on information & knowledge management (pp. 2725-2732).</li>	
+						<li>Van Der Walt, E., & Eloff, J. (2018). Using machine learning to detect fake identities: bots vs humans. IEEE access, 6, 6540-6549.</li>
+						<li>Rout, R. R., Lingam, G., & Somayajulu, D. V. (2020). Detection of malicious social bots using learning automata with url features in twitter network. IEEE Transactions on Computational Social Systems, 7(4), 1004-1018.</li>	
+						<li>Xu, T., Goossen, G., Cevahir, H. K., Khodeir, S., Jin, Y., Li, F., ... & Pearce, P. (2021). Deep entity classification: Abusive account detection for online social networks. In 30th {USENIX} Security Symposium ({USENIX} Security 21).</li>
+						<li>Cresci, S., Petrocchi, M., Spognardi, A., & Tognazzi, S. (2019, June). Better safe than sorry: an adversarial approach to improve social bot detection. In Proceedings of the 10th ACM Conference on Web Science (pp. 47-56).</li>	
+						<li>Cresci, S., Petrocchi, M., Spognardi, A., & Tognazzi, S. (2021). The coming age of adversarial social bot detection. First Monday.</li>
+						<li>Le, T., Tran-Thanh, L., & Lee, D. (2022, April). Socialbots on fire: Modeling adversarial behaviors of socialbots via multi-agent hierarchical reinforcement learning. In Proceedings of the ACM Web Conference 2022 (pp. 545-554).</li>
+						<li>Shao, H., Yao, S., Jing, A., Liu, S., Liu, D., Wang, T., ... & Abdelzaher, T. (2020, August). Misinformation detection and adversarial attack cost analysis in directional social networks. In 2020 29th International Conference on Computer Communications and Networks (ICCCN) (pp. 1-11). IEEE.</li>
+						<!-- <li></li>	
+						<li></li>	
+						<li></li>	
+						<li></li>	 -->
+					</ol>
+				</section><!--//docs-intro-->
+			</header>
+		</article><!--//docs-article-->
+
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Edited by <b>SoKTeam</b> </small>
+						<br>
+						<small class="copyright">Theme Credits: <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+				        <!-- <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul>//social-list -->
+				    </div>
+			    </footer>
+		    </div> 
 	    </div>
-	    
-    </footer>
+    </div><!--//docs-wrapper-->
+   
        
     <!-- Javascript -->          
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
     
     <!-- Page Specific JS -->
     <script src="assets/plugins/smoothscroll.min.js"></script>
